@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background: #000;
+   
+}
+#game-board {
+    text-align: center;
+}
+
+.container {
+    padding: 4%;
+}
+
+.game {
+  text-align: center;
+  color: white;
+}
+
+.game p {
+  font-size: 14px;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+
+
+
+
+
+/*--- COL 1 ---*/
+
+
+
+.linea {
+  background: #315887;
+} .info {
+     color: #fff;
+    padding-top: 15%;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+} .span {
+  font-weight: 600;
+  /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
+} .logo-img {
+     width: 350px;
+    padding-right: 10%;
+    padding-top: 5%;
+
+
+
+
+
+} /* --- COL 3 ---*/
+
+
+
+.otra-info {
+     margin-left: 12px;
+    color: #fff;
+    padding: 10%;
+    /* padding-top: 34%; */
+    font-family: sans-serif;
+    font-weight: 400;
+    /* padding-left: 7%; */
+    font-size: 15px;
+    text-align: center;
+    background: #315887;
+} img {
+    width: 200px;
+}  .arrows-img {
+  width: 150px;
+} .flechas {
+  padding-top: 3%;
+    padding-left: 7%;
+}
