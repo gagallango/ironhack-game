@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css" />
     <title>Document</title>
 </head>
@@ -20,27 +22,30 @@
                         <img src="./img/drun-logo-2.png" alt="" class="logo-img" />
                         <br />
                         <div class="info">
-                            ¿Te apetece salir y beberte hasta<br /> la copa de los árboles?
-                            <br /> <span class="span">Pues no puedes porque estás en
-                                cuarentena</span>. <br /> Sin embargo, <br />puedes estar tranquilo, <br /> aquí tienes
-                            lo
-                            que más
-                            echas
-                            de menos: fiesta y
-                            riesgo.
+                            <p class="parrafo">¿Te apetece salir y beberte hasta la copa de los árboles? <br /> Pues no
+                                puedes
+                                porque <br /> <span class="span">estás en cuarentena.</span></p>
+                            <img class="cervezas" src="./img/cervezaaaaas.jpg" alt="" class="" />
+                            <p class="parrafo">Sin embargo, puedes estar tranquilo, aquí tienes lo que más echas de
+                                menos: fiesta y riesgo.</p>
+                            <!-- <button id="start-button">StartGame</button> -->
                         </div>
-                        <img src="" alt="" class="" />
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div id="game-board">
-                        <canvas id="myCanvas" width="351" height="612"></canvas>
+                        <canvas id="myCanvas" width="351" height="618"></canvas>
                     </div>
                 </div>
                 <div class="ultima col-sm-4">
+                    <div class="colores">
+                        <img src="./img/colores.png" alt="">
+                    </div>
                     <div class="otra-info">
-                        <p>Corre y bébete todo lo que pilles <br /> antes de que la policía te ponga una multa</p>
-                        <p>Usa las teclas para huir<br /> y ganar puntos</p>
+                        <p>Corre y bebe <br /> todo lo que pilles <br /> antes de que la policía <br /> te ponga una
+                            multa <br /> o algún loco te atropelle.
+                        </p>
+                        <p class="span">Usa las teclas para huir.</p>
                     </div>
                     <div class="flechas">
                         <img src="./img/flechas.png" alt="">
@@ -50,8 +55,11 @@
         </div>
     </section>
 
+    <!-- <script src="js/gameover.js"></script> -->
+    <script src="js/score.js"></script>
+    <script src="js/life.js"></script>
     <script src="js/obstacles.js"></script>
-    <script src="js/background.js"></script>
+    <script src="js/player.js"></script>
     <script src="js/background.js"></script>
     <script src="js/game.js"></script>
     <script src="js/index.js"></script>

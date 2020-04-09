@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: #000;
+    font-family: 'Roboto Mono', monospace;
    
 }
 #game-board {
@@ -13,16 +13,13 @@ body {
 
 .game {
   text-align: center;
-  color: white;
-}
-
-.game p {
-  font-size: 14px;
-    font-family: sans-serif;
-    line-height: 20px;
+  color: black;
 }
 
 
+#myCanvas {
+  border: 5px solid lightsteelblue;
+}
 
 
 
@@ -30,17 +27,20 @@ body {
 
 
 
-.linea {
-  background: #315887;
-} .info {
-     color: #fff;
-    padding-top: 15%;
+.info {
+    color: #000;
+    padding-top: 5%;
     font-family: sans-serif;
     font-weight: 100;
     font-size: 18px;
-} .span {
+} .parrafo {
+font-size: 21px;
+    font-family: sans-serif;
+    
+} .cervezas {
+  width: 100px;
+}.span {
   font-weight: 600;
-  /* text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000; */
 } .logo-img {
      width: 350px;
     padding-right: 10%;
@@ -55,21 +55,22 @@ body {
 
 
 .otra-info {
-     margin-left: 12px;
-    color: #fff;
-    padding: 10%;
-    /* padding-top: 34%; */
+    margin-left: 20px;
+    color: #000;
+    /* padding: 10%; */
+    padding-top: 40px;
     font-family: sans-serif;
-    font-weight: 400;
-    /* padding-left: 7%; */
-    font-size: 15px;
+    font-weight: 100;
+    font-size: 18px;
     text-align: center;
-    background: #315887;
+    /* background: #315887; */
 } img {
     width: 200px;
 }  .arrows-img {
   width: 150px;
 } .flechas {
-  padding-top: 3%;
     padding-left: 7%;
+} .colores {
+  margin-top: 95px;
+    margin-left: 15px;
 }
