@@ -177,12 +177,15 @@ const game = {
 
     gameOver() {
         // document.location.reload();
-        window.clearInterval(this.interval)
-        this.ctx.fillStyle = 'black'
-        this.ctx.fillRect(0, 0, 351, 618)
+        setTimeout(() => {
+            clearInterval(this.interval);
+        }, 500);
         this.image = new Image()
-        this.image.src = './img/gameover.png'
-        this.ctx.drawImage(this.image, this.posX, this.posY, 100, 100)
+        this.image.src = './img/gameooover.png'
+        this.ctx.fillStyle = 'white'
+        this.ctx.fillRect(0, 0, 351, 618)
+        this.ctx.drawImage(this.image, 0, 200, 350, 230)
+
     },
 
 
