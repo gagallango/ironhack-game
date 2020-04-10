@@ -21,7 +21,13 @@ body {
 
 /*--- COL 1 ---*/
 
+#start {
+  margin-top: 5%;
+}
 
+h1 {
+  font-size: 100px;
+}
 
 .info {
     color: #000;
@@ -30,7 +36,7 @@ body {
     font-weight: 100;
     font-size: 18px;
 } .parrafo {
-font-size: 21px;
+font-size: 18px;
     font-family: sans-serif;
     
 } .cervezas {
@@ -40,7 +46,7 @@ font-size: 21px;
 } .logo-img {
      width: 350px;
     padding-right: 10%;
-    padding-top: 5%;
+  
 
 
 
@@ -61,7 +67,7 @@ font-size: 21px;
     text-align: center;
     /* background: #315887; */
 } img {
-    width: 200px;
+    width: 120px;
 }  .arrows-img {
   width: 150px;
 } .flechas {

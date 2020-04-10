@@ -89,13 +89,14 @@ const game = {
         this.obstacle4.forEach(obs => obs.draw())
         this.obstacle5.forEach(obs => obs.draw())
         this.obstacle6.forEach(obs => obs.draw())
-        this.square.draw()
+
         this.lifes.draw()
         this.score.draw()
 
         this.farola.forEach(far => far.draw())
         this.obstacle.forEach(obs => obs.draw())
         this.obstacle2.forEach(obs => obs.draw())
+        this.square.draw()
 
 
     },
@@ -103,12 +104,12 @@ const game = {
     drawStage2() {
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 150, this.canvasSize.height / 2 + 180, 80, 80, this.canvasSize, './img/GAMEArtboard 6@100x.png'))
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 190, this.canvasSize.height / 2 + 180, 80, 80, this.canvasSize, './img/GAMEArtboard 6@100x.png'))
-        this.market.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 150, this.canvasSize.height - 430, 180, 200, this.canvasSize, './img/GAMEArtboard 8@100x.png'))
+        this.market.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 150, this.canvasSize.height - 370, 160, 140, this.canvasSize, './img/farmacia.png'))
         this.mojito.push(new Mojitos(this.ctx, this.canvasSize.width / 2 + 200, this.canvasSize.height / 2 + 40, 30, 40, this.canvasSize, './img/GAMEArtboard 10@100x.png'))
         this.mojito.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 30, this.canvasSize.height / 2 - 130, 30, 40, this.canvasSize, './img/GAMEArtboard 10@100x.png'))
-        this.beer.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 70, this.canvasSize.height / 2 + 150, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
+        this.beer.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 60, this.canvasSize.height / 2 + 150, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
         this.cerveza.push(new Mojitos(this.ctx, this.canvasSize.width / 2 + 100, this.canvasSize.height / 2 - 200, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
-        this.cerveza.push(new Mojitos(this.ctx, this.canvasSize.width / 2 + 130, this.canvasSize.height / 2 + 60, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
+        this.cerveza.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 80, this.canvasSize.height / 2 + 60, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
         this.edificio.push(new Cosas(this.ctx, this.canvasSize.width / 2, this.canvasSize.height / 2 - 400, 200, 200, this.canvasSize, './img/GAMEArtboard 7@100x.png'))
         this.edificio.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 170, this.canvasSize.height / 2 - 405, 120, 200, this.canvasSize, './img/GAMEArtboard 19@100x.png'))
         this.edificio.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 80, this.canvasSize.height / 2 - 405, 120, 200, this.canvasSize, './img/GAMEArtboard 19@100x.png'))
@@ -184,7 +185,7 @@ const game = {
         this.image.src = './img/gameooover.png'
         this.ctx.fillStyle = 'white'
         this.ctx.fillRect(0, 0, 351, 618)
-        this.ctx.drawImage(this.image, 0, 200, 350, 230)
+        this.ctx.drawImage(this.image, 0, 200, 370, 270)
 
     },
 
@@ -195,9 +196,9 @@ const game = {
 
     generateMojito() {
         this.mojito.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 40, this.canvasSize.height / 2 + 40, 30, 40, this.canvasSize, './img/GAMEArtboard 10@100x.png'))
-        this.mojito.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 150, this.canvasSize.height / 2 - 150, 30, 40, this.canvasSize, './img/GAMEArtboard 10@100x.png'))
-        this.beer.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 100, this.canvasSize.height / 2 + 200, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
-        this.cerveza.push(new Mojitos(this.ctx, this.canvasSize.width / 2 + 100, this.canvasSize.height / 2 - 200, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
+        this.mojito.push(new Mojitos(this.ctx, this.canvasSize.width / 2 + 70, this.canvasSize.height / 2 - 150, 30, 40, this.canvasSize, './img/GAMEArtboard 10@100x.png'))
+        this.beer.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 120, this.canvasSize.height / 2 + 200, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
+        this.cerveza.push(new Mojitos(this.ctx, this.canvasSize.width / 2 - 130, this.canvasSize.height / 2 - 70, 30, 40, this.canvasSize, './img/GAMEArtboard 11@100x.png'))
     },
 
     generateEdifico() {
@@ -205,7 +206,7 @@ const game = {
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 140, this.canvasSize.height / 2 + 80, 80, 80, this.canvasSize, './img/GAMEArtboard 6@100x.png'))
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 100, this.canvasSize.height / 2 + 80, 80, 80, this.canvasSize, './img/GAMEArtboard 6@100x.png'))
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 180, this.canvasSize.height / 2 + 80, 80, 80, this.canvasSize, './img/GAMEArtboard 6@100x.png'))
-        this.market.push(new Cosas(this.ctx, this.canvasSize.width / 2 - 20, this.canvasSize.height - 410, 180, 200, this.canvasSize, './img/GAMEArtboard 9@100x.png'))
+        this.market.push(new Cosas(this.ctx, this.canvasSize.width / 2 + 30, this.canvasSize.height - 370, 160, 140, this.canvasSize, './img/mercado.png'))
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 + 90, this.canvasSize.height / 2 - 300, 60, 60, this.canvasSize, './img/farola.png'))
         this.farola.push(new Cosas(this.ctx, this.canvasSize.width / 2 + 50, this.canvasSize.height / 2 - 300, 60, 60, this.canvasSize, './img/farola.png'))
     },
