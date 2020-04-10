@@ -11,3 +11,8 @@ Presiona el botón START para empezar el juego y controla a tu jugador a través
 ```bash
 get drunk
 ```
+
+## Créditos
+
+Gráficos hechos por Irvin Díaz
+https://www.instagram.com/irvinvcs/
